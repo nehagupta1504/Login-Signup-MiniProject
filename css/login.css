@@ -8,6 +8,12 @@
   border: 5px solid #002d62;
   border-radius: 15px;
 }
+.container h1 {
+  color: goldenrod;
+  text-align: center;
+  display: block;
+  font-size: 3rem;
+}
 input {
   display: block;
   border: none;
@@ -45,9 +51,6 @@ input {
 }
 #reset:hover {
   background-color: red;
-}
-.container h1 {
-  font-size: 3rem;
 }
 
 .inner-div {
@@ -99,9 +102,11 @@ input {
     height: auto;
     margin: auto 0;
     padding-bottom: 10px;
+    border: 5px solid #002d62;
   }
   input {
     margin-top: 6%;
+    border: 5px solid #002d62;
   }
   .button {
     height: 50px;
@@ -115,6 +120,12 @@ input {
   }
   .errors {
     font-size: small;
+  }
+  .container h1 {
+    color: #002d62;
+  }
+  .inner-div a {
+    color: #002d62;
   }
 }
 ::-webkit-input-placeholder {
