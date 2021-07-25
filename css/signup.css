@@ -116,6 +116,10 @@ form {
   }
   .login a {
     color: #002d62;
+    font-size: 15px;
+  }
+  .login span {
+    font-size: 12px;
   }
   .input-fields input {
     border: 3px solid #002d62;

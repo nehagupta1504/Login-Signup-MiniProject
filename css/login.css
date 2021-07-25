@@ -1,7 +1,15 @@
 /* Login Form */
+body {
+  height: 100vh;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  height: inherit;
+  align-items: center;
+}
 .container {
   margin: auto;
-  margin-top: 10%;
   background-color: #336b87;
   width: 40%;
   min-height: 450px;
@@ -141,13 +149,15 @@ input {
   .left-div,
   .right-div {
     width: 100%;
-    font-size: larger;
+    font-size: 12px;
   }
   .right-div {
     justify-content: flex-start;
+    font-size: 12px;
   }
   .inner-div a {
     color: #002d62;
+    font-size: 15px;
   }
 }
 ::-webkit-input-placeholder {
