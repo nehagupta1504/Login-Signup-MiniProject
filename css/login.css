@@ -105,18 +105,22 @@ input {
     border: 5px solid #002d62;
   }
   input {
-    margin-top: 6%;
+    margin-top: 8%;
     border: 5px solid #002d62;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 90%;
   }
   .button {
-    height: 50px;
-
-    width: 100%;
+    height: 40px;
+    width: 80%;
+    border-radius: 30px;
+    margin: 2% auto;
   }
   .buttons {
     flex-direction: column-reverse;
     align-items: center;
-    margin: 1% auto;
+    margin: 10% auto;
   }
   .errors {
     font-size: small;
@@ -126,6 +130,7 @@ input {
   }
   .inner-div {
     flex-direction: column;
+    margin-top: 4%;
   }
   .left-div,
   .right-div {
