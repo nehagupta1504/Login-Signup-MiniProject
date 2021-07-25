@@ -16,16 +16,24 @@
 
         <div class="form">
           <form
-            name="regForm"
-            onsubmit="return myFunction()"
+            name="signUpForm"
+            onsubmit="return signUp()"
             method="get"
-            action="/submit.html"
+            action="submit.html"
           >
             <div class="input-fields">
-              <input type="text" placeholder="Enter Your Name" />
-              <input type="text" placeholder="Enter Your Email" />
-              <input type="text" placeholder="Enter Your Contact Number" />
-              <input type="password" placeholder="Password" />
+              <input type="text" placeholder="Enter Your Name" id="name" />
+              <span class="errors" id="error-name"></span>
+              <input type="email" placeholder="Enter Your Email" id="email" />
+              <span class="errors" id="error-email"></span>
+              <input
+                type="text"
+                placeholder="Enter Your Contact Number"
+                id="contact"
+              />
+              <span class="errors" id="error-contact"></span>
+              <input type="password" placeholder="Password" id="password" />
+              <span class="errors" id="error-password"></span>
             </div>
             <div class="login">
               <span
@@ -33,7 +41,7 @@
               >
             </div>
             <div class="buttons">
-              <button>Sign Up</button>
+              <button id="signup" type="submit">Sign Up</button>
             </div>
           </form>
         </div>
