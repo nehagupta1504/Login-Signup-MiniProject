@@ -79,6 +79,13 @@ input {
   justify-content: flex-end;
   width: 30%;
 }
+.errors {
+  display: block;
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: center;
+  font-size: large;
+}
 @media only screen and (max-width: 600px) {
   .parent {
     display: flex;
@@ -105,6 +112,9 @@ input {
     flex-direction: column-reverse;
     align-items: center;
     margin: 1% auto;
+  }
+  .errors {
+    font-size: small;
   }
 }
 ::-webkit-input-placeholder {
