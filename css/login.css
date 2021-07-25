@@ -1,0 +1,113 @@
+/* Login Form */
+.container {
+  margin: auto;
+  margin-top: 10%;
+  background-color: #336b87;
+  width: 40%;
+  min-height: 450px;
+  border: 5px solid #002d62;
+  border-radius: 15px;
+}
+input {
+  display: block;
+  border: none;
+  margin: auto;
+  border-bottom: 5px solid goldenrod;
+  margin-top: 6%;
+  width: 80%;
+  height: 2rem;
+  border-radius: 2cm;
+  font-size: large;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 20px;
+}
+.button {
+  margin-top: 44px;
+  border: 3px solid #002d62;
+  border-radius: 10px;
+  width: 137px;
+  height: 51px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: none;
+  font-size: large;
+  font-weight: 800;
+  color: #002d62;
+}
+.button:hover {
+  background-color: #002d62;
+  border: 3px solid white;
+  color: white;
+}
+#reset:hover {
+  background-color: red;
+}
+.container h1 {
+  font-size: 3rem;
+}
+
+.inner-div {
+  display: flex;
+}
+.left-div,
+.right-div {
+  display: flex;
+  width: 50%;
+  margin: 1% 10%;
+  font-size: medium;
+}
+.left-div {
+  width: 70%;
+}
+.left-div a {
+  font-size: large;
+}
+.left-div a,
+.right-div a {
+  color: goldenrod;
+  text-decoration: none;
+}
+.left-div a:hover,
+.right-div a:hover {
+  text-decoration: underline;
+}
+.right-div {
+  justify-content: flex-end;
+  width: 30%;
+}
+@media only screen and (max-width: 600px) {
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+    padding-bottom: 10px;
+  }
+  input {
+    margin-top: 6%;
+  }
+  .button {
+    height: 50px;
+
+    width: 100%;
+  }
+  .buttons {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1% auto;
+  }
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  text-align: center;
+}

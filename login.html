@@ -6,47 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
     <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/login.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <h1 style="color: goldenrod; text-align: center; display: block">
-        Login
-      </h1>
+    <div class="parent">
+      <div class="container">
+        <h1 style="color: goldenrod; text-align: center; display: block">
+          <b>Login</b>
+        </h1>
 
-      <div>
-        <form
-          name="regForm"
-          onsubmit="return myFunction()"
-          method="get"
-          action="/submit.html"
-        >
-          <input
-            placeholder="Enter your username or email.."
-            id="username"
-            type="text"
-            name="username"
-          />
-          <span
-            style="display: none; color: red; text-align: center"
-            id="error-username"
-          ></span>
-          <input
-            placeholder="Enter your password.."
-            id="password"
-            type="password"
-            name="password"
-          />
-          <span
-            style="display: none; color: red; text-align: center"
-            id="error-password"
-          ></span>
-          <div class="buttons">
-            <button class="button" id="login" type="submit">Login</button>
-            <button class="button" type="reset">Reset</button>
-          </div>
-        </form>
+        <div>
+          <form
+            name="regForm"
+            onsubmit="return myFunction()"
+            method="get"
+            action="/submit.html"
+          >
+            <input
+              placeholder="Enter your username or email.."
+              id="username"
+              type="text"
+              name="username"
+            />
+            <span
+              class="errors"
+              style="display: none; color: red; text-align: center"
+              id="error-username"
+            ></span>
+            <input
+              placeholder="Enter your password.."
+              id="password"
+              type="password"
+              name="password"
+            />
+            <span
+              class="errors"
+              style="display: none; color: red; text-align: center"
+              id="error-password"
+            ></span>
+            <div class="inner-div">
+              <div class="left-div">
+                <span>Don't Have account <a href="">Signup</a> now</span>
+              </div>
+              <div class="right-div">
+                <a class="forgot-password" href="">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="button" type="reset" id="reset">Reset</button>
+              <button class="button" id="login" type="submit">Login</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-    <script src="app.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
