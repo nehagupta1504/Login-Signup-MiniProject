@@ -24,7 +24,7 @@ function myFunction() {
       "Password should conatin atleast 1 special character & 1 Uppercase character";
     return false;
   } else {
-    document.getElementById("password").style.visibility = "hidden";
+    document.getElementById("error-password").style.visibility = "hidden";
   }
   return true;
   // document.getElementById("try").innerHTML = username + password;
