@@ -124,6 +124,16 @@ input {
   .container h1 {
     color: #002d62;
   }
+  .inner-div {
+    flex-direction: column;
+  }
+  .left-div,
+  .right-div {
+    width: 100%;
+  }
+  .right-div {
+    justify-content: flex-start;
+  }
   .inner-div a {
     color: #002d62;
   }
