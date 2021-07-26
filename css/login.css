@@ -25,9 +25,9 @@ input {
   border: none;
   margin: auto;
   border-bottom: 5px solid goldenrod;
-  margin-top: 6%;
-  width: 80%;
-  height: 2rem;
+  margin-top: 4%;
+  width: 86%;
+  height: 3rem;
   border-radius: 2cm;
   font-size: large;
   text-align: center;
@@ -68,7 +68,8 @@ input {
   display: flex;
   width: 50%;
   margin: 1% 7%;
-  font-size: medium;
+  font-size: large;
+  font-weight: 600;
 }
 .left-div {
   width: 70%;
