@@ -33,11 +33,11 @@ body {
   color: #00308f;
   font-size: 1.5rem;
   padding: 0 5px;
-  font-weight: 800;
+  font-weight: 600;
 }
 .right-nav-b span {
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #00308f;
 }
 .right-nav-b a:hover {
@@ -53,4 +53,54 @@ body {
   width: 90%;
   height: 70%;
   border-radius: 10px;
+}
+.carousel-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-inner {
+  width: 55%;
+  border-radius: 5px;
+}
+.carousel .carousel-indicators li {
+  background-color: red;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #00308f;
+  width: 10%;
+  height: 10%;
+}
+.home-icon {
+  color: #00308f;
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+  .carousel-section {
+    height: 400px;
+  }
+  .carousel-inner {
+    width: 90%;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #00308f;
+    width: 15%;
+    height: 10%;
+  }
+  .home-icon {
+    font-size: 1rem;
+  }
 }
