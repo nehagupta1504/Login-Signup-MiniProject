@@ -8,7 +8,7 @@ function myFunction() {
     document.getElementById("error-username").innerHTML =
       "Username should contain @ & atleast of length 3";
   } else {
-    document.getElementById("error-username").style.display = "none";
+    document.getElementById("error-username").style.visibility = "hidden";
   }
   if (password.length < 4) {
     document.getElementById("error-password").style.visibility = "visible";
@@ -16,10 +16,10 @@ function myFunction() {
       "Password should be of length greater than 3";
     return false;
   } else {
-    document.getElementById("password").style.visibility = "hidden";
+    document.getElementById("error-password").style.visibility = "hidden";
   }
   if (password.search(/[A-Z]/) < 0 || password.search(/[!@#$%^&]/) < 0) {
-    document.getElementById("error-password").style.display = "block";
+    document.getElementById("error-password").style.visibility = "visible";
     document.getElementById("error-password").innerHTML =
       "Password should conatin atleast 1 special character & 1 Uppercase character";
     return false;
