@@ -102,6 +102,6 @@ body {
     height: 10%;
   }
   .home-icon {
-    font-size: 1rem;
+    display: none;
   }
 }
