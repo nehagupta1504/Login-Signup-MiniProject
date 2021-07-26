@@ -9,6 +9,13 @@
     <link href="./css/login.css" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <nav class="navbar-b">
+        <div class="left-nav-b">
+          <a href="index.html"> <img src="./assets/icon.png" alt="" /></a>
+        </div>
+      </nav>
+    </header>
     <div class="parent">
       <div class="container">
         <h1>
@@ -19,8 +26,8 @@
           <form
             name="regForm"
             onsubmit="return myFunction()"
-            method="get"
-            action="/submit.html"
+            method="POST"
+            action="/dashboard.html"
           >
             <input
               placeholder="Enter your username or email.."

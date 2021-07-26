@@ -4,13 +4,12 @@
 }
 body {
   background-image: url(../assets/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg);
-  height: 100vh;
 }
 
 .parent {
   display: flex;
   justify-content: center;
-  height: inherit;
+  height: 700px;
   align-items: center;
 }
 .container {
@@ -105,6 +104,9 @@ form {
   max-width: 360px;
 }
 @media only screen and (max-width: 600px) {
+  .parent {
+    height: 600px;
+  }
   .container {
     min-width: 96%;
     padding: 0 0;

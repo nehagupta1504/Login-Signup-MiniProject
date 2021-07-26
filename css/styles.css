@@ -2,23 +2,25 @@ body {
   background-image: url(../assets/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg);
 }
 
-.navbar {
+.navbar-b {
   display: flex;
+  margin-top: 0.5%;
 }
-.navbar a {
+.navbar-b a {
   text-decoration: none;
   font-size: large;
 }
-.left-nav img {
+.left-nav-b img {
   width: 100px;
 }
-.left-nav {
+.left-nav-b {
   display: flex;
   justify-content: left;
   align-items: center;
   width: 50%;
+  margin-left: 2%;
 }
-.right-nav {
+.right-nav-b {
   display: flex;
   justify-content: flex-end;
   width: 50%;
@@ -26,7 +28,7 @@ body {
 
   margin-right: 5%;
 }
-.right-nav a {
+.right-nav-b a {
   text-decoration: none;
   color: #00308f;
   font-size: 1.5rem;
@@ -34,13 +36,22 @@ body {
   font-weight: 800;
   transition: all 5s linear;
 }
-.right-nav span {
+.right-nav-b span {
   font-size: 2rem;
   font-weight: 800;
   color: #00308f;
 }
-.right-nav a:hover {
+.right-nav-b a:hover {
   font-size: 1.8rem;
   color: #72a0c1;
   text-decoration: underline;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 70%;
+  border-radius: 10px;
 }
