@@ -48,10 +48,20 @@ li {
   align-items: center;
   padding: 20px 10px;
 }
-.grid-item h4 {
+.grid-item > h4,
+.portfolio-item > h4 {
   color: #002d62;
   font-weight: 700;
 }
-.grid-item h4:hover {
+.grid-item h4:hover,
+.portfolio-item h4:hover {
   color: #888888;
+}
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  justify-content: flex-start;
+  width: fit-content;
+  text-align: center;
 }
